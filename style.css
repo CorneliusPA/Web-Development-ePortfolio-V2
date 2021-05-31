@@ -1,0 +1,583 @@
+.greenBorder{
+height: 0px;
+width: 0px;
+border-left: 0px solid transparent;
+	border-right: 80px solid transparent;
+	border-top: 80px solid green;
+
+margin-left: 0%;
+position: absolute;
+}
+.redBorder{
+    height: 0px;
+    width: 0px;
+    border-left: 80px solid transparent;
+	border-right: 0px solid transparent;
+	border-top: 80px solid red;
+    
+    margin-left: 94%;
+position:absolute;
+}
+.blueBorder{
+    height: 50px;
+    width: 50px;
+    border-left: 0px solid transparent;
+	border-right: 80px solid transparent;
+	border-bottom: 80px solid blue;
+    margin-left: 0%;
+    margin-top: 0%;
+    position:absolute;
+}
+.yellowBorder{
+    height: 0px;
+    width: 0px;
+    border-left: 80px solid transparent;
+	border-right: 0px solid transparent;
+	border-bottom: 80px solid yellow;
+    margin-left: 94%;
+    margin-top: 0%;
+    position:absolute;
+}
+
+.accordion {
+    background-color: rgb(78, 78, 78); 
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+      
+      background-color: rgb(139, 139, 139);
+      color: black;
+      font-size: 20px;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color:rgb(160, 160, 160);
+    overflow: hidden;
+  }
+
+.languageSymbol{
+width: 60px;
+height: 60px;
+}
+.languageSymbol:hover{
+    height:100px;
+    width:100px;
+    text-align: center;
+ }   
+ .languageSymbol2{
+    height:60px;
+    width:90px;
+    text-align: center;
+
+}
+    .languageSymbol2:hover{
+        height:100px;
+        width:130px;
+        text-align: center;
+
+    }
+#p1{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-color: red;
+    z-index: -1;
+    animation: colorTransition 1s infinite alternate;
+}
+@keyframes colorTransition {
+
+    from{}
+    to{background-color: blue;}
+
+}
+#p1Alt{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-color: green;
+    z-index: -1;
+    animation: colorTransition2 1s infinite alternate;
+}
+@keyframes colorTransition2 {
+
+    from{}
+    to{background-color: yellow;}
+
+}
+#P1Btn{
+    background-color: black;
+    color: white;
+}
+#P1Btn a{
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+}
+
+
+.grid{
+
+display: grid;
+grid-template-columns: 52px 52px 52px 52px 52px 52px 52px 52px 52px 52px;
+grid-template-rows: 52px 52px 52px;
+
+margin-top: 0%;
+margin-left: 27.5%;
+}
+
+.grid div{
+    border: 1px  solid black;
+        
+        height: 50px;
+        width: 50px;
+        text-align: center;
+}
+
+.grid2{
+    display: grid;
+grid-template-columns: 50px  50px 50px;
+grid-template-rows: 50px 50px 50px;
+width: 50px;
+height: 50px;
+
+text-align: center;
+margin-left: 43.5%;
+margin-top: 5%;
+}
+.redBtn{
+background-color: red;
+}
+.blackBtn{
+background-color: black;
+color: white;
+}
+/*Checker Board*/
+#div0{
+    background-color: red;
+}
+#div1{
+    background-color: black;
+}
+/*                                       Periodic Table                                    */
+.BG{
+    background-color: rgb(66, 64, 64);
+}
+.Table{
+display: grid;
+grid-template-columns: 42px 42px 42px 42px 42px 42px 
+                       42px 42px 42px 42px 42px 42px
+                       42px 42px 42px 42px 42px 42px;
+grid-template-rows: 42px 42px 42px 42px 42px 42px 42px;
+justify-content: center;
+margin-top: 2%;
+}
+.Element{
+    background-color: blue;
+color: green;
+text-align: center;
+width: 20px;
+height: 20px;
+padding: 10px;
+margin: 0px;
+border: 1px solid black;
+}
+.Table2{
+
+    display: grid;
+    grid-template-columns: 42px 42px 42px 42px 42px
+                           42px 42px 42px 42px 42px
+                           42px 42px 42px 42px 42px;
+    grid-template-rows: 42px, 42px;
+    justify-content: center;
+    margin-top: 1%;
+}
+.Element2{
+    background: linear-gradient(135deg, rgb(255, 200, 97), orange, rgb(161, 105, 0));
+    text-align: center;
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 10px;
+}
+.Element2:hover{
+    background: linear-gradient(135deg, rgb(255, 213, 135), rgb(255, 186, 57), rgb(255, 166, 1));
+    border: 1px solid white;
+}
+.ElementV{
+background-color: rgba(0, 0, 0, 0);
+}
+.ElementHn{
+background: linear-gradient(135deg, rgba(187, 187, 187, .2), grey, rgb(88, 76, 76));
+text-align: center;
+width: 42px;
+height: 42px;
+padding: 10px;
+margin: 0px;
+border: 1px solid black;
+font-size: 10px;
+
+}
+.ElementHn:hover{
+    background: linear-gradient(135deg, rgba(224, 224, 224, 0.2), rgb(201, 201, 201), rgb(143, 125, 125));
+    border: 1px solid white;
+}
+.ElementAM{
+    background: linear-gradient(135deg, rgb(65, 255, 255), cyan, rgb(0, 180, 180));
+    text-align: center;
+width: 42px;
+height: 42px;
+padding: 10px;
+margin: 0px;
+border: 1px solid black;
+font-size: 10px;
+}
+.ElementAM:hover{
+    background:linear-gradient(135deg, rgb(133, 255, 255), rgb(89, 255, 255), rgb(40, 250, 250));
+    border: 1px solid white;
+}
+
+.ElementAEM{
+    background: linear-gradient(135deg, rgb(173, 214, 228), lightblue, rgb(93, 215, 255));
+    text-align: center;
+width: 42px;
+height: 42px;
+padding: 10px;
+margin: 0px;
+border: 1px solid black;
+font-size: 10px;
+}
+.ElementAEM:hover{
+    background: linear-gradient(135deg, rgb(214, 245, 255), rgb(202, 239, 252), rgb(148, 228, 255));
+    border: 1px solid white;
+}
+
+.ElementTM{
+    background: linear-gradient(135deg, rgb(255, 107, 53), orangered, rgb(199, 54, 2));
+    text-align: center;
+width: 42px;
+height: 42px;
+padding: 10px;
+margin: 0px;
+border: 1px solid black;
+font-size: 10px;
+}
+.ElementTM:hover{
+    background:linear-gradient(135deg, rgb(255, 133, 89), rgb(255, 126, 79), rgb(255, 68, 0));
+    border: 1px solid white;
+}
+
+.ElementITM{
+    background: linear-gradient(135deg,rgb(255, 200, 97), orange, rgb(161, 105, 0));
+    text-align: center;
+width: 42px;
+height: 42px;
+padding: 10px;
+margin: 0px;
+border: 1px solid black;
+font-size: 10px;
+}
+.ElementITM:hover{
+    background: linear-gradient(135deg, rgb(255, 213, 135), rgb(255, 186, 57), rgb(255, 166, 1));
+    border: 1px solid white;
+}
+
+.ElementM{  
+    background: linear-gradient(135deg, rgb(255, 255, 85), yellow, rgb(172, 172, 0));
+    text-align: center;
+width: 42px;
+height: 42px;
+padding: 10px;
+margin: 0px;
+border: 1px solid black;
+font-size: 10px;
+}
+.ElementM:hover{
+    background: linear-gradient(135deg, rgb(255, 255, 122), rgb(255, 255, 60), rgb(223, 223, 0));
+    border: 1px solid white;
+}
+
+.ElementPTM{
+    background: linear-gradient(135deg, rgb(236, 98, 236), violet, rgb(230, 59, 230));
+    text-align: center;
+width: 42px;
+height: 42px;
+padding: 10px;
+margin: 0px;
+border: 1px solid black;
+font-size: 10px;
+}
+.ElementPTM:hover{
+    background: linear-gradient(135deg, rgb(241, 142, 241), rgb(236, 148, 236), rgb(231, 100, 231));
+    border: 1px solid white;
+}
+.ElementON{
+    background: linear-gradient(135deg, rgb(247, 109, 247), magenta, rgb(194, 0, 194));
+    text-align: center;
+width: 42px;
+height: 42px;
+padding: 10px;
+margin: 0px;
+border: 1px solid black;
+font-size: 10px;
+}
+.ElementON:hover{
+    background: linear-gradient(135deg, rgb(243, 146, 243), rgb(255, 80, 255), rgb(255, 15, 255));
+    border: 1px solid white;
+}
+
+.ElementH{
+    background: linear-gradient(135deg, rgb(253, 214, 221), pink, rgb(255, 138, 158));
+    text-align: center;
+width: 42px;
+height: 42px;
+padding: 10px;
+margin: 0px;
+border: 1px solid black;
+font-size: 10px;
+}
+.ElementH:hover{
+    background: linear-gradient(135deg, rgb(255, 236, 240), rgb(252, 216, 222), rgb(255, 187, 198));
+    border: 1px solid white;
+}
+
+.ElementNG{
+    background: linear-gradient(135deg, rgb(83, 180, 125), seagreen, rgb(2, 131, 58));
+    text-align: center;
+width: 42px;
+height: 42px;
+padding: 10px;
+margin: 0px;
+border: 1px solid black;
+font-size: 10px;
+}
+.ElementNG:hover{
+    background: linear-gradient(135deg, rgb(113, 245, 170), rgb(73, 214, 134), rgb(0, 224, 97));
+    border: 1px solid white;
+}
+
+.Catalog{
+display: grid;
+grid-template-columns: 50px 140px 50px 140px 50px 140px 50px 140px 50px 140px;
+grid-template-rows: 40px;
+justify-content: center;
+margin-top: -5%;
+}
+.ECatalog{
+    color: black;
+    font-size: 12px;
+width: 100px;
+height: 20px;
+margin: 0px;
+padding: 10px;
+}
+.Hn{
+    background: linear-gradient(135deg, rgba(187, 187, 187, .2), grey, rgb(88, 76, 76));
+    text-align: center;
+    width: 10px;
+    height: 10px;
+    padding: 15px;
+    margin: 0px;
+    border:2px solid black;
+}
+.Hn:hover{
+     background: linear-gradient(135deg, rgba(224, 224, 224, 0.2), rgb(201, 201, 201), rgb(143, 125, 125));
+    border: 2px solid white;
+
+}
+.AM{
+    background: linear-gradient(135deg, rgb(65, 255, 255), cyan, rgb(0, 180, 180));
+    width: 10px;
+    height: 10px;
+    margin: 0px;
+    padding: 15px;
+    border:2px solid black;
+}
+.AM:hover{
+background:linear-gradient(135deg, rgb(133, 255, 255), rgb(89, 255, 255), rgb(40, 250, 250));
+    border: 2px solid white;
+}
+.AEM{
+    background: linear-gradient(135deg, rgb(173, 214, 228), lightblue, rgb(82, 187, 223));
+    width: 10px;
+    height: 10px;
+    margin: 0px;
+    padding: 15px;
+    border:2px solid black;
+}
+.AEM:hover{
+    background: linear-gradient(135deg, rgb(214, 245, 255), rgb(202, 239, 252), rgb(148, 228, 255));
+    border: 2px solid white;
+}
+.M{
+     background: linear-gradient(135deg, rgb(255, 255, 85), yellow, rgb(172, 172, 0));
+    width: 10px;
+    height: 10px;
+    margin: 0px;
+    padding: 15px;
+    border:2px solid black;
+}
+.M:hover{
+    background: linear-gradient(135deg, rgb(255, 255, 122), rgb(255, 255, 60), rgb(223, 223, 0));
+    border: 2px solid white;
+}
+
+.H{
+     background:linear-gradient(135deg, rgb(253, 214, 221), pink, rgb(255, 138, 158));
+    width: 10px;
+    height: 10px;
+    margin: 0px;
+    padding: 15px;
+    border:2px solid black;
+}
+.H:hover{
+    background: linear-gradient(135deg, rgb(255, 236, 240), rgb(252, 216, 222), rgb(255, 187, 198));
+    border: 2px solid white;
+    }
+.IT{
+     background: linear-gradient(135deg,rgb(255, 200, 97), orange, rgb(161, 105, 0));
+    width: 10px;
+    height: 10px;
+    margin: 0px;
+    padding: 15px;
+    border:2px solid black;
+}
+.IT:hover{
+    background: linear-gradient(135deg, rgb(255, 213, 135), rgb(255, 186, 57), rgb(255, 166, 1));
+    border: 2px solid white;
+
+}
+.NG{
+    background: linear-gradient(135deg, rgb(83, 180, 125), seagreen, rgb(2, 131, 58));
+    width: 10px;
+    height: 10px;
+    margin: 0px;
+    padding: 15px;
+    border:2px solid black;
+}
+.NG:hover{
+background: linear-gradient(135deg, rgb(113, 245, 170), rgb(73, 214, 134), rgb(0, 224, 97));
+    border: 2px solid white;
+}
+.PTM{
+     background: linear-gradient(135deg, rgb(236, 98, 236), violet, rgb(230, 59, 230));
+    width: 10px;
+    height: 10px;
+    margin: 0px;
+    padding: 15px;
+    border:2px solid black;
+}
+.PTM:hover{
+    background: linear-gradient(135deg, rgb(241, 142, 241), rgb(236, 148, 236), rgb(231, 100, 231));
+    border: 2px solid white;
+}
+.TM{
+     background: linear-gradient(135deg, rgb(255, 107, 53), orangered, rgb(199, 54, 2));
+    width: 10px;
+    height: 10px;
+    margin: 0px;
+    padding: 15px;
+    border:2px solid black;
+}
+.TM:hover{
+    background:linear-gradient(135deg, rgb(255, 133, 89), rgb(255, 126, 79), rgb(255, 68, 0));
+    border: 2px solid white;
+}
+.ON{
+    background:linear-gradient(135deg, rgb(247, 109, 247), magenta, rgb(194, 0, 194));
+    width: 10px;
+    height: 10px;
+    margin: 0px;
+    padding: 15px;
+    border:2px solid black;
+}
+.ON:hover{
+   background: linear-gradient(135deg, rgb(243, 146, 243), rgb(255, 80, 255), rgb(255, 15, 255));
+    border: 2px solid white;
+}
+
+
+.Textbox_Display{
+display:grid;
+grid-template-columns: auto auto auto;
+grid-template-rows: auto auto auto;
+position: static;
+margin-left: 2%;
+margin-bottom: 100px;
+
+}
+ #Text_Name{
+width: 70px;
+height: 10px;
+padding: 10px;
+border: 1px solid black;
+background-color: gainsboro;
+text-align: center;
+font-size: 10px;
+border: 2px solid black;
+border-radius: 5px;
+}
+#Textbox_Name{
+    width: 150px;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: gainsboro;
+    font-size: 20px;
+    border: 2px solid black;
+border-radius: 5px;
+text-align: center;
+ }
+#Text_Description{
+    width: 70px;
+    height: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: gainsboro;
+    font-size: 10px;
+    border: 2px solid black;
+border-radius: 5px;
+ }
+#Textbox_Description{
+    width: 140px;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: gainsboro;
+    font-size: 10px;
+    border: 2px solid black;
+border-radius: 5px;
+ }
+#Text_Image{
+    width: 70px;
+    height: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: gainsboro;
+    font-size: 10px;
+    margin-left: -25px;
+    border: 2px solid black;
+border-radius: 5px;
+ }
+#Textbox_Image{
+    width: 140px;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: gainsboro;
+    font-size: 10px;
+    border: 2px solid black;
+border-radius: 5px;
+}
+

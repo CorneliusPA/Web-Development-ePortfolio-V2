@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body style="background-color: rgba(105, 105, 105, 1);">
+  
+  <div class="greenBorder"></div> 
+  <div class="redBorder"></div>
+
+  <div style="background-color:rgb(160, 160, 160);">
+     <h1 style="text-align: center; padding: 20px; text-decoration: underline;">Cornelius Palugar Allison</h1>
+ </div>
+    
+    
+        
+        <!---CONTACT INFORMATION-->
+        <button class="accordion">CONTACT INFORMATION</button>
+        <div class="panel" style="text-align: center; ">
+          <h3>1(747)777-0291 | Cornelius.P.Allison@gmail.com | Van Nuys, CA 91401</h3>
+         <a href="https://www.linkedin.com/in/cornelius-allison-501479133/" target="_blank"><img class="languageSymbol" src="images/In.png" alt="linkedin"></a>
+         <a href="https://github.com/CorneliusPA" target="_blank"><img class="languageSymbol" src="images/Git.png" alt="GitHub"></a>
+        </div>
+
+
+        <!---SUMMARY-->
+        <button class="accordion">SUMMARY</button>
+        <div class="panel">
+        <h3>  A passionate Software Developer proficient in constructing websites via static HTML
+           and various frameworks for building APIs. I’m eager to learn more about dynamic 
+           programming, refining my skills and willing to overcome new challenges in a team 
+           oriented work environment. Currently pursuing a career in Web Development as a 
+          Front-End Developer.</h3>
+        </div>
+        
+<!--SKILLS-->
+        <button class="accordion">SKILLS</button>
+        <div class="panel" style="text-align: center;">
+        <h3>Front-End Languages</h3>
+<tr>
+  <td><img class="languageSymbol" alt="HTML5" src="images/html.png"></td>
+  <td><img class="languageSymbol" alt="CSS3" src="images/css.png"></td>
+</tr>
+
+ <h3>Back-End Languages</h3>
+<img class="languageSymbol" alt="C++" src="images/c++.png">
+<img class="languageSymbol" alt="JavaScript" src="images/js.png">
+<img class="languageSymbol" alt="TypeScript" src="images/ts.png">
+<img class="languageSymbol2" alt="PHP" src="images/php.png"  >
+<img class="languageSymbol" alt="MySQL" src="images/mysql.png">
+
+ <h3>Frameworks</h3>
+<img class="languageSymbol" alt="Bootstrap" src="images/bootstrap.png">
+<img class="languageSymbol" alt="Node.js" src="images/nodejs.png">
+<img class="languageSymbol" alt="Angular" src="images/angular.png">
+<img class="languageSymbol" alt="React" src="images/react.png">
+        </div>
+
+        <!--PROJECT REEL-->
+
+        <h2 style="text-align: center; background-color: yellow; padding: 15px;">PROJECT REEL</h2>
+        <div class="container"> 
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        
+            <div class="carousel-inner"  style="background-color: rgb(78, 78, 78);">
+              <div class="item active" style=" background-color: rgb(78, 78, 78);">
+                
+                <h1 style="text-align: center; border: 2px solid black; border-radius: 5px; justify-content: center; background-color: rgb(0, 116, 0); color:white;">Project: Black Luster</h1>
+              
+                <h3 style="text-align: center; color: white;">Controls: Use the buttons below to move and reset your position.</h3>
+                
+               <div class="grid">
+                    <div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div><div></div><div></div>
+                    <div><div id=p1></div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div><div></div><div></div>
+               </div>
+               
+                <div class="grid2">
+                    <button id="UL" class="redBtn">UL</button>
+                    <button id="Up" class="blackBtn">^</button>
+                    <button  id="UR" class="redBtn">UR</button>
+                    <button id="Left" class="blackBtn"><</button>
+                   <button id="P1Btn"> <a href="index.html" >P1</a></button>
+                    <button id="Right" class="blackBtn">></button>
+                    <button id="DL" class="redBtn">DL</button>
+                    <button id="Down" class="blackBtn">v</button>
+                    <button id="DR" class="redBtn">DR</button>   
+                </div>
+                <div style="width: 100%; height: 250px"></div>
+               <p id="base" style="color: rgba(255, 255, 255, 0);"></p>
+
+              </div>
+              
+              <div class="item" style=" background-color: rgb(78, 78, 78);">
+                <div style="text-align: center;">
+              <h1 style="text-align: center; border: 2px solid black; border-radius: 5px; justify-content: center; background-color: rgb(190, 4, 4); color:white">Checker Board</h1>
+               </div>
+              <h3  style="color: white;text-align: center;">Controls: Drag and Drop to move Checker pieces.</h3>
+             
+                <div style="display: grid;
+                grid-template-columns: 55px 55px 55px 55px 55px 55px;
+                grid-template-rows: 55px 55px;
+                justify-content: center;">   
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                </div>
+            
+            <div style="background-color: grey; display: grid; 
+            grid-template-columns: 55px 55px 55px 55px 55px 55px 55px 55px;
+            grid-template-rows: 55px 55px 55px 55px 55px 55px 55px 55px;
+            justify-content: center;">
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag1" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag2" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag3" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag4" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                 
+                
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag5" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag6" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag7" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag8" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag9" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag10" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag11" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag12" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                 
+                
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                 
+                
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag13" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag14" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag15" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag16" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                
+               
+                
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag17" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag18" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag19" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag20" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                 
+                
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag21" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag22" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag23" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag24" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+                <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+            </div>  
+            <div style="display: grid;
+            grid-template-columns: 55px 55px 55px 55px 55px 55px;
+            grid-template-rows: 55px 55px;
+            justify-content: center;">   
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+            </div>
+              </div>
+            
+              <div class="item" style=" background-color: rgb(78, 78, 78);">
+                 
+                  <h1  style="text-align: center; border: 2px solid black; border-radius: 5px; justify-content: center; background-color: rgb(0, 0, 172); color:white">Periodic Table</h1>
+                  <h3  style="color: white; text-align: center;">Controls: Select an Element to reveal information.(Description and Images coming soon!)</h3>   
+      
+                  <div class="Textbox_Display">
+                       <div id="Text_Name"> <p style="margin-top: -5px; margin-left: -25px;">Name:</p> </div>
+                       <div id="Text_Description"> <p style="margin-top: -5px; margin-left: -5px;">Description:</p> </div>
+                       <div id="Text_Image"> <p style="margin-top: -5px; margin-left: -5px;">Image:</p> </div>
+                       <div id="Textbox_Name"><p id="Name"></p></div>
+                       <div id="Textbox_Description"><p id="Description"></p></div>
+                      <image id="Textbox_Image" ></image>
+                   </div>
+                    
+                 <div class="Catalog">
+      
+                 <button class="Hn"></button>
+                 <div class="ECatalog">-Hydrogen</div>
+                 <button class="AM"></button>
+                 <div class="ECatalog">-Alkali metals</div>
+                 <button class="AEM"></button>
+                 <div class="ECatalog">-Alkaline earth metals</div>
+                 <button class="M"></button>
+                 <div class="ECatalog">-Metalloids</div>
+                 <button class="H"></button>
+                 <div class="ECatalog">-Halogens</div>
+                 <button class="IT"></button>
+                 <div class="ECatalog">-Inner Transitions</div>
+                 <button class="NG"></button>
+                 <div class="ECatalog">-Noble gases</div>
+                 <button class="PTM"></button>
+                 <div class="ECatalog">-Post-transition metals</div>
+                 <button class="TM"></button>
+                 <div class="ECatalog">-Transition metals</div>
+                 <button class="ON"></button>
+                 <div class="ECatalog">-Other nonmetals</div>
+      
+                   </div> 
+                 
+                  
+      
+                  <div class="Table">
+                      <button style="text-align: center;" class="ElementHn" onclick="element1()">1<br>H</button>
+                      <div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div>
+                      <div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div>
+                      <div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div>
+                      <div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div>
+                      <button class="ElementNG" onclick="element2()">2<br>He</button>
+                      <button class="ElementAM" onclick="element3()">3<br>Li</button>
+                      <button class="ElementAEM" onclick="element4()">4<br>Be</button>
+                      <div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div>
+                      <div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div>
+                      <div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div>
+                      <button class="ElementM" onclick="element5()">5<br>B</button>
+                      <button class="ElementON" onclick="element6()">6<br>C</button>
+                      <button class="ElementON" onclick="element7()">7<br>N</button>
+                      <button class="ElementON" onclick="element8()">8<br>O</button>
+                      <button class="ElementH" onclick="element9()">9<br>F</button>
+                      <button class="ElementNG" onclick="element10()">10<br>Ne</button>
+                      <button class="ElementAM" onclick="element11()">11<br>Na</button>
+                      <button class="ElementAEM" onclick="element12()">12<br>Mg</button>
+                      <div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div>
+                      <div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div>
+                      <div class="ElementV"></div><div class="ElementV"></div>
+                      <button class="ElementPTM" onclick="element13()">13<br>Al</button>
+                      <button class="ElementM" onclick="element14()">14<br>Si</button>
+                      <button class="ElementON" onclick="element15()">15<br>P</button>
+                      <button class="ElementON" onclick="element16()">16<br>S</button>
+                      <button class="ElementH" onclick="element17()">17<br>Cl</button>
+                      <button class="ElementNG" onclick="element18()">18<br>Ar</button>
+                      <button class="ElementAM" onclick="element19()">19<br>K</button>
+                      <button class="ElementAEM" onclick="element20()">20<br>Ca</button>
+                      <button class="ElementTM" onclick="element21()">21<br>Sc</button>
+                      <button class="ElementTM" onclick="element22()">22<br>Ti</button>
+                      <button class="ElementTM" onclick="element23()">23<br>V</button>
+                      <button class="ElementTM" onclick="element24()">24<br>Cr</button>
+                      <button class="ElementTM" onclick="element25()">25<br>Mn</button>
+                      <button class="ElementTM" onclick="element26()">26<br>Fe</button>
+                      <button class="ElementTM" onclick="element27()">27<br>Co</button>
+                      <button class="ElementTM" onclick="element28()">28<br>Ni</button>
+                      <button class="ElementTM" onclick="element29()">29<br>Cu</button>
+                      <button class="ElementTM" onclick="element30()">30<br>Zn</button>
+                      <button class="ElementPTM" onclick="element31()">31<br>Ga</button>
+                      <button class="ElementM" onclick="element32()">32<br>Ge</button>
+                      <button class="ElementM" onclick="element33()">33<br>As</button>
+                      <button class="ElementON" onclick="element34()">34<br>Se</button>
+                      <button class="ElementH" onclick="element35()">35<br>Br</button>
+                      <button class="ElementNG" onclick="element36()">36<br>Kr</button>
+                      <button class="ElementAM" onclick="element37()">37<br>Rb</button>
+                      <button class="ElementAEM" onclick="element38()">38<br>Sr</button> 
+                      <button class="ElementTM" onclick="element39()">39<br>Y</button>
+                      <button class="ElementTM" onclick="element40()">40<br>Zr</button>
+                      <button class="ElementTM" onclick="element41()">41<br>Nb</button>
+                      <button class="ElementTM" onclick="element42()">42<br>Mo</button>
+                      <button class="ElementTM" onclick="element43()">43<br>Tc</button>
+                      <button class="ElementTM" onclick="element44()">44<br>Ru</button>
+                      <button class="ElementTM" onclick="element45()">45<br>Rh</button>
+                      <button class="ElementTM" onclick="element46()">46<br>Pd</button>
+                      <button class="ElementTM" onclick="element47()">47<br>Ag</button>
+                      <button class="ElementTM" onclick="element48()">48<br>Cd</button>
+                      <button class="ElementPTM" onclick="element49()">49<br>In</button>
+                      <button class="ElementPTM" onclick="element50()">50<br>Sn</button>
+                      <button class="ElementM" onclick="element51()">51<br>Sb</button>
+                      <button class="ElementM" onclick="element52()">52<br>Te</button>
+                      <button class="ElementH" onclick="element53()">53<br>I</button>
+                      <button class="ElementNG" onclick="element54()">54<br>Xe</button>
+                      <button class="ElementAM" onclick="element55()">55<br>Cs</button>
+                      <button class="ElementAEM" onclick="element56()">56<br>Ba</button>
+                      <button class="ElementITM" style="font-size: 12px;">57-71</button>
+                      <button class="ElementTM" onclick="element72()">72<br>Hf</button>
+                      <button class="ElementTM" onclick="element73()">73<br>Ta</button>
+                      <button class="ElementTM" onclick="element74()">74<br>W</button>
+                      <button class="ElementTM" onclick="element75()">75<br>Re</button>
+                      <button class="ElementTM" onclick="element76()">76<br>Os</button>
+                      <button class="ElementTM" onclick="element77()">77<br>Ir</button>
+                      <button class="ElementTM" onclick="element78()">78<br>Pt</button>
+                      <button class="ElementTM" onclick="element79()">79<br>Au</button>
+                      <button class="ElementTM" onclick="element80()">80<br>Hg</button>
+                      <button class="ElementPTM" onclick="element81()">81<br>Tl</button>
+                      <button class="ElementPTM" onclick="element82()">82<br>Pb</button>
+                      <button class="ElementPTM" onclick="element83()">83<br>Bi</button>
+                      <button class="ElementM" onclick="element84()">84<br>Po</button>
+                      <button class="ElementH" onclick="element85()">85<br>At</button>
+                      <button class="ElementNG" onclick="element86()">86<br>Rn</button>
+                      <button class="ElementAM" onclick="element87()">87<br>Fr</button>
+                      <button class="ElementAEM" onclick="element88()">88<br>Ra</button>
+                      <button class="ElementITM" style="font-size: 12px;">89-103</button>
+                      <button class="ElementTM" onclick="element104()">104<br>Rf</button>
+                      <button class="ElementTM" onclick="element105()">105<br>Db</button>
+                      <button class="ElementTM" onclick="element106()">106<br>Sg</button>
+                      <button class="ElementTM" onclick="element107()">107<br>Bh</button>
+                      <button class="ElementTM" onclick="element108()">108<br>Hs</button>
+                      <button class="ElementTM" onclick="element109()">109<br>Mt</button>
+                      <button class="ElementTM" onclick="element110()">110<br>Ds</button>
+                      <button class="ElementTM" onclick="element111()">111<br>Rg</button>
+                      <button class="ElementTM" onclick="element112()">112<br>Cn</button>
+                      <button class="ElementPTM" onclick="element113()">113<br>Nh</button>
+                      <button class="ElementPTM" onclick="element114()">114<br>Fl</button>
+                      <button class="ElementPTM" onclick="element115()">115<br>Mc</button>
+                      <button class="ElementPTM" onclick="element116()">116<br>Lv</button>
+                      <button class="ElementH" onclick="element117()">117<br>Ts</button>
+                      <button class="ElementNG" onclick="element118()">118<br>Og</button>
+                     
+                  </div>
+      <div class="Table2">
+      
+                  <button class="Element2" onclick="element57()">57<br>La</button>
+                  <button class="Element2" onclick="element58()">58<br>Ce</button>
+                  <button class="Element2" onclick="element59()">59<br>Pr</button>
+                  <button class="Element2" onclick="element60()">60<br>Nd</button>
+                  <button class="Element2" onclick="element61()">61<br>Pm</button>
+                  <button class="Element2" onclick="element62()">62<br>Sm</button>
+                  <button class="Element2" onclick="element63()">63<br>Eu</button>
+                  <button class="Element2" onclick="element64()">64<br>Gd</button>
+                  <button class="Element2" onclick="element65()">65<br>Tb</button>
+                  <button class="Element2" onclick="element66()">66<br>Dy</button>
+                  <button class="Element2" onclick="element67()">67<br>Ho</button>
+                  <button class="Element2" onclick="element68()">68<br>Er</button>
+                  <button class="Element2" onclick="element69()">69<br>Tm</button>
+                  <button class="Element2" onclick="element70()">70<br>Yb</button>
+                  <button class="Element2" onclick="element71()">71<br>Lu</button>
+                  <button class="Element2" onclick="element89()">89<br>Ac</button>
+                  <button class="Element2" onclick="element90()">90<br>Th</button>
+                  <button class="Element2" onclick="element91()">91<br>Pa</button>
+                  <button class="Element2" onclick="element92()">92<br>U</button>
+                  <button class="Element2" onclick="element93()">93<br>Np</button>
+                  <button class="Element2" onclick="element94()">94<br>Pu</button>
+                  <button class="Element2" onclick="element95()">95<br>Am</button>
+                  <button class="Element2" onclick="element96()">96<br>Cm</button>
+                  <button class="Element2" onclick="element97()">97<br>Bk</button>
+                  <button class="Element2" onclick="element98()">98<br>Cf</button>
+                  <button class="Element2" onclick="element99()">99<br>Es</button>
+                  <button class="Element2" onclick="element100()">100<br>Fm</button>
+                  <button class="Element2" onclick="element101()">101<br>Md</button>
+                  <button class="Element2" onclick="element102()">102<br>No</button>
+                  <button class="Element2" onclick="element103()">103<br>Lr</button>
+      </div> 
+              <div style="width: 200%; height: 125px"></div>
+              </div>
+            </div>
+        
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        
+
+      
+
+
+        <button class="accordion">CERTIFICATION</button>
+        <div class="panel" style="text-align: center;">
+         <h3> Front-End Developer Certification (W3Schools) </h3>
+        </div>
+
+         <button class="accordion">EDUCATION</button>
+        <div class="panel" style="text-align: center;">
+         <h3>Will Rogers High School - Van Nuys, CA: High School Diploma (December, 2014)</h3>
+         
+        </div>
+
+<div class="blueBorder"></div> 
+<div class="yellowBorder"></div>
+    
+</body>
+
+<footer>
+  <h3 style="text-align: center; color: white;">Made with Static HTML </h3>
+</footer>

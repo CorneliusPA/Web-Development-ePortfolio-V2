@@ -1,0 +1,76 @@
+/*Project Black Luster*/
+#p1{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-color: red;
+    z-index: -1;
+    animation: colorTransition 1s infinite alternate;
+}
+@keyframes colorTransition {
+
+    from{}
+    to{background-color: blue;}
+
+}
+#p1Alt{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-color: green;
+    z-index: -1;
+    animation: colorTransition2 1s infinite alternate;
+}
+@keyframes colorTransition2 {
+
+    from{}
+    to{background-color: yellow;}
+
+}
+#P1Btn{
+    background-color: black;
+    color: white;
+}
+#P1Btn a{
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+}
+
+
+.grid{
+
+display: grid;
+grid-template-columns: 52px 52px 52px 52px 52px 52px 52px 52px 52px 52px;
+grid-template-rows: 52px 52px 52px;
+
+margin-top: 0%;
+margin-left: 27.5%;
+}
+
+.grid div{
+    border: 1px  solid black;
+        
+        height: 50px;
+        width: 50px;
+        text-align: center;
+}
+
+.grid2{
+    display: grid;
+grid-template-columns: 50px  50px 50px;
+grid-template-rows: 50px 50px 50px;
+width: 50px;
+height: 50px;
+
+text-align: center;
+margin-left: 43.5%;
+margin-top: 5%;
+}
+.redBtn{
+background-color: red;
+}
+.blackBtn{
+background-color: black;
+color: white;
+}
