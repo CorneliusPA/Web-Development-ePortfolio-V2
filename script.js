@@ -127,8 +127,8 @@ function allowDrop(ev) {
 var c = document.getElementById("Textbox_Image");
 
       c.style.position= "absolute";
-      c.style.left = 70.7 + '%';
-c.style.top = 120 + 'px';
+      c.style.left = 950 + 'px';
+c.style.top = 125 + 'px';
 function element1(){
      document.getElementById("Name").innerHTML = "Hydrogen";
      document.getElementById("Description").innerHTML = "Hydrogen's Description";
