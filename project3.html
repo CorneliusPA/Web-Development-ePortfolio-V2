@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script2.js" defer></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/bootstrap.js"></script> 
+    <title>Periodic Table</title>
+   
+</head>
+<body style="background-color: rgba(105, 105, 105, 1)">
+    
+     <h1  style="text-align: center; border: 2px solid black; border-radius: 5px; justify-content: center; background-color: rgb(0, 0, 172); color:white">Periodic Table</h1>
+       <a href="index.html" style="text-decoration: none;"><h2 style="text-align: center; color:black;border: 2px solid black; border-radius: 5px;">Click Here to Return to Homepage</h2></a>
+                           
+                
+     <div style="display: grid; grid-template-columns: auto; grid-template-rows: 50px 210px 30px 25px; width: 300px; height: 420px; background-color: grey; border: 2px solid black; margin-left: 37%; border-radius: 5px;">
+    
+       <h2 id="Name" style="text-align: center;">(Select an Element)</h2>
+    
+        <image style="justify-self: center;" id="Textbox_Image"></image>
+                           
+        <strong> Description:</strong>
+        <div  style="width: 300px; height:127px; overflow: visible; border: 1px solid black; overflow-y: scroll;"><span id="Description">Elements Description</p></div>
+        
+      </div>
+
+       <div style="width: 100%; height: 100px;"></div>
+       
+    <div class="Catalog">
+
+    <button class="Hn"></button>
+    <div class="ECatalog">-Hydrogen</div>
+    <button class="AM"></button>
+    <div class="ECatalog">-Alkali metals</div>
+    <button class="AEM"></button>
+    <div class="ECatalog">-Alkaline earth metals</div>
+    <button class="M"></button>
+    <div class="ECatalog">-Metalloids</div>
+    <button class="H"></button>
+    <div class="ECatalog">-Halogens</div>
+    <button class="IT"></button>
+    <div class="ECatalog">-Inner Transitions</div>
+    <button class="NG"></button>
+    <div class="ECatalog">-Noble gases</div>
+    <button class="PTM"></button>
+    <div class="ECatalog">-Post-transition metals</div>
+    <button class="TM"></button>
+    <div class="ECatalog">-Transition metals</div>
+    <button class="ON"></button>
+    <div class="ECatalog">-Other nonmetals</div>
+
+      </div> 
+    
+     
+
+     <div class="Table">
+         <button style="text-align: center;" class="ElementHn" onclick="element1()">1<br>H</button>
+         <div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div>
+         <div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div>
+         <div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div>
+         <div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div>
+         <button class="ElementNG" onclick="element2()">2<br>He</button>
+         <button class="ElementAM" onclick="element3()">3<br>Li</button>
+         <button class="ElementAEM" onclick="element4()">4<br>Be</button>
+         <div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div>
+         <div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div>
+         <div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div>
+         <button class="ElementM" onclick="element5()">5<br>B</button>
+         <button class="ElementON" onclick="element6()">6<br>C</button>
+         <button class="ElementON" onclick="element7()">7<br>N</button>
+         <button class="ElementON" onclick="element8()">8<br>O</button>
+         <button class="ElementH" onclick="element9()">9<br>F</button>
+         <button class="ElementNG" onclick="element10()">10<br>Ne</button>
+         <button class="ElementAM" onclick="element11()">11<br>Na</button>
+         <button class="ElementAEM" onclick="element12()">12<br>Mg</button>
+         <div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div>
+         <div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div><div class="ElementV"></div>
+         <div class="ElementV"></div><div class="ElementV"></div>
+         <button class="ElementPTM" onclick="element13()">13<br>Al</button>
+         <button class="ElementM" onclick="element14()">14<br>Si</button>
+         <button class="ElementON" onclick="element15()">15<br>P</button>
+         <button class="ElementON" onclick="element16()">16<br>S</button>
+         <button class="ElementH" onclick="element17()">17<br>Cl</button>
+         <button class="ElementNG" onclick="element18()">18<br>Ar</button>
+         <button class="ElementAM" onclick="element19()">19<br>K</button>
+         <button class="ElementAEM" onclick="element20()">20<br>Ca</button>
+         <button class="ElementTM" onclick="element21()">21<br>Sc</button>
+         <button class="ElementTM" onclick="element22()">22<br>Ti</button>
+         <button class="ElementTM" onclick="element23()">23<br>V</button>
+         <button class="ElementTM" onclick="element24()">24<br>Cr</button>
+         <button class="ElementTM" onclick="element25()">25<br>Mn</button>
+         <button class="ElementTM" onclick="element26()">26<br>Fe</button>
+         <button class="ElementTM" onclick="element27()">27<br>Co</button>
+         <button class="ElementTM" onclick="element28()">28<br>Ni</button>
+         <button class="ElementTM" onclick="element29()">29<br>Cu</button>
+         <button class="ElementTM" onclick="element30()">30<br>Zn</button>
+         <button class="ElementPTM" onclick="element31()">31<br>Ga</button>
+         <button class="ElementM" onclick="element32()">32<br>Ge</button>
+         <button class="ElementM" onclick="element33()">33<br>As</button>
+         <button class="ElementON" onclick="element34()">34<br>Se</button>
+         <button class="ElementH" onclick="element35()">35<br>Br</button>
+         <button class="ElementNG" onclick="element36()">36<br>Kr</button>
+         <button class="ElementAM" onclick="element37()">37<br>Rb</button>
+         <button class="ElementAEM" onclick="element38()">38<br>Sr</button> 
+         <button class="ElementTM" onclick="element39()">39<br>Y</button>
+         <button class="ElementTM" onclick="element40()">40<br>Zr</button>
+         <button class="ElementTM" onclick="element41()">41<br>Nb</button>
+         <button class="ElementTM" onclick="element42()">42<br>Mo</button>
+         <button class="ElementTM" onclick="element43()">43<br>Tc</button>
+         <button class="ElementTM" onclick="element44()">44<br>Ru</button>
+         <button class="ElementTM" onclick="element45()">45<br>Rh</button>
+         <button class="ElementTM" onclick="element46()">46<br>Pd</button>
+         <button class="ElementTM" onclick="element47()">47<br>Ag</button>
+         <button class="ElementTM" onclick="element48()">48<br>Cd</button>
+         <button class="ElementPTM" onclick="element49()">49<br>In</button>
+         <button class="ElementPTM" onclick="element50()">50<br>Sn</button>
+         <button class="ElementM" onclick="element51()">51<br>Sb</button>
+         <button class="ElementM" onclick="element52()">52<br>Te</button>
+         <button class="ElementH" onclick="element53()">53<br>I</button>
+         <button class="ElementNG" onclick="element54()">54<br>Xe</button>
+         <button class="ElementAM" onclick="element55()">55<br>Cs</button>
+         <button class="ElementAEM" onclick="element56()">56<br>Ba</button>
+         <button class="ElementITM" style="font-size: 12px;">57-71</button>
+         <button class="ElementTM" onclick="element72()">72<br>Hf</button>
+         <button class="ElementTM" onclick="element73()">73<br>Ta</button>
+         <button class="ElementTM" onclick="element74()">74<br>W</button>
+         <button class="ElementTM" onclick="element75()">75<br>Re</button>
+         <button class="ElementTM" onclick="element76()">76<br>Os</button>
+         <button class="ElementTM" onclick="element77()">77<br>Ir</button>
+         <button class="ElementTM" onclick="element78()">78<br>Pt</button>
+         <button class="ElementTM" onclick="element79()">79<br>Au</button>
+         <button class="ElementTM" onclick="element80()">80<br>Hg</button>
+         <button class="ElementPTM" onclick="element81()">81<br>Tl</button>
+         <button class="ElementPTM" onclick="element82()">82<br>Pb</button>
+         <button class="ElementPTM" onclick="element83()">83<br>Bi</button>
+         <button class="ElementM" onclick="element84()">84<br>Po</button>
+         <button class="ElementH" onclick="element85()">85<br>At</button>
+         <button class="ElementNG" onclick="element86()">86<br>Rn</button>
+         <button class="ElementAM" onclick="element87()">87<br>Fr</button>
+         <button class="ElementAEM" onclick="element88()">88<br>Ra</button>
+         <button class="ElementITM" style="font-size: 12px;">89-103</button>
+         <button class="ElementTM" onclick="element104()">104<br>Rf</button>
+         <button class="ElementTM" onclick="element105()">105<br>Db</button>
+         <button class="ElementTM" onclick="element106()">106<br>Sg</button>
+         <button class="ElementTM" onclick="element107()">107<br>Bh</button>
+         <button class="ElementTM" onclick="element108()">108<br>Hs</button>
+         <button class="ElementTM" onclick="element109()">109<br>Mt</button>
+         <button class="ElementTM" onclick="element110()">110<br>Ds</button>
+         <button class="ElementTM" onclick="element111()">111<br>Rg</button>
+         <button class="ElementTM" onclick="element112()">112<br>Cn</button>
+         <button class="ElementPTM" onclick="element113()">113<br>Nh</button>
+         <button class="ElementPTM" onclick="element114()">114<br>Fl</button>
+         <button class="ElementPTM" onclick="element115()">115<br>Mc</button>
+         <button class="ElementPTM" onclick="element116()">116<br>Lv</button>
+         <button class="ElementH" onclick="element117()">117<br>Ts</button>
+         <button class="ElementNG" onclick="element118()">118<br>Og</button>
+        
+     </div>
+<div class="Table2">
+
+     <button class="Element2" onclick="element57()">57<br>La</button>
+     <button class="Element2" onclick="element58()">58<br>Ce</button>
+     <button class="Element2" onclick="element59()">59<br>Pr</button>
+     <button class="Element2" onclick="element60()">60<br>Nd</button>
+     <button class="Element2" onclick="element61()">61<br>Pm</button>
+     <button class="Element2" onclick="element62()">62<br>Sm</button>
+     <button class="Element2" onclick="element63()">63<br>Eu</button>
+     <button class="Element2" onclick="element64()">64<br>Gd</button>
+     <button class="Element2" onclick="element65()">65<br>Tb</button>
+     <button class="Element2" onclick="element66()">66<br>Dy</button>
+     <button class="Element2" onclick="element67()">67<br>Ho</button>
+     <button class="Element2" onclick="element68()">68<br>Er</button>
+     <button class="Element2" onclick="element69()">69<br>Tm</button>
+     <button class="Element2" onclick="element70()">70<br>Yb</button>
+     <button class="Element2" onclick="element71()">71<br>Lu</button>
+     <button class="Element2" onclick="element89()">89<br>Ac</button>
+     <button class="Element2" onclick="element90()">90<br>Th</button>
+     <button class="Element2" onclick="element91()">91<br>Pa</button>
+     <button class="Element2" onclick="element92()">92<br>U</button>
+     <button class="Element2" onclick="element93()">93<br>Np</button>
+     <button class="Element2" onclick="element94()">94<br>Pu</button>
+     <button class="Element2" onclick="element95()">95<br>Am</button>
+     <button class="Element2" onclick="element96()">96<br>Cm</button>
+     <button class="Element2" onclick="element97()">97<br>Bk</button>
+     <button class="Element2" onclick="element98()">98<br>Cf</button>
+     <button class="Element2" onclick="element99()">99<br>Es</button>
+     <button class="Element2" onclick="element100()">100<br>Fm</button>
+     <button class="Element2" onclick="element101()">101<br>Md</button>
+     <button class="Element2" onclick="element102()">102<br>No</button>
+     <button class="Element2" onclick="element103()">103<br>Lr</button>
+</div> 
+
+</body>

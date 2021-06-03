@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devices-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+     
+    
+    <title>Checker Board</title>
+</head>
+<body style="background-color: rgba(105, 105, 105, 1)">
+     
+   
+    
+        <h1 style="text-align: center; border: 2px solid black; border-radius: 5px; justify-content: center; background-color: rgb(190, 4, 4); color:white">Checker Board</h1>
+         
+<a href="index.html" style="text-decoration: none;"><h2 style="text-align: center; color:black;border: 2px solid black; border-radius: 5px;">Click Here to Return to Homepage</h2></a>
+
+        <h3  style="color: white;text-align: center;">Controls: Drag and Drop to move Checker pieces.</h3>
+       
+          <div style="display: grid;
+          grid-template-columns: 55px 55px 55px 55px 55px 55px;
+          grid-template-rows: 55px 55px;
+          justify-content: center;">   
+          <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          </div>
+      
+      <div style="background-color: grey; display: grid; 
+      grid-template-columns: 55px 55px 55px 55px 55px 55px 55px 55px;
+      grid-template-rows: 55px 55px 55px 55px 55px 55px 55px 55px;
+      justify-content: center;">
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag1" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag2" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag3" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag4" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+           
+          
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag5" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag6" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag7" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag8" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag9" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag10" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag11" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag12" draggable="true" ondragstart="drag(event)" style=" background-color: rgb(19, 19, 19); width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+           
+          
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+           
+          
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag13" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag14" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag15" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag16" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          
+         
+          
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag17" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag18" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag19" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag20" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+           
+          
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag21" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag22" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag23" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"><div id="drag24" draggable="true" ondragstart="drag(event)" style=" background-color: red; width: 50px; height: 50px;border-radius: 50%; border: 1px solid grey;"></div></div>
+          <div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+      </div>  
+      <div style="display: grid;
+      grid-template-columns: 55px 55px 55px 55px 55px 55px;
+      grid-template-rows: 55px 55px;
+      justify-content: center;">   
+      <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+      <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+      <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+      <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+      <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+      <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+      <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+      <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+      <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+      <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+      <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+      <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid black; width: 50px; height: 50px; display:inline-block;"></div>
+      </div>
+
+</body>
