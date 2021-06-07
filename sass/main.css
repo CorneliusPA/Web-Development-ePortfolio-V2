@@ -2,7 +2,7 @@
   background-color: dimgray;
 }
 
-.siteBackground .projectReel {
+.projectReel {
   text-align: center;
   background-color: yellow;
   padding: 15px;
@@ -208,6 +208,13 @@
           animation: colorTransition 1s infinite alternate;
 }
 
+@-webkit-keyframes colorTransition {
+  from {
+  }
+  to {
+    background-color: blue;
+  }
+}
 
 @keyframes colorTransition {
   from {
@@ -282,12 +289,8 @@
 .Table {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 42px 42px 42px 42px 42px 42px 
- 42px 42px 42px 42px 42px 42px
- 42px 42px 42px 42px 42px 42px;
-      grid-template-columns: 42px 42px 42px 42px 42px 42px 
- 42px 42px 42px 42px 42px 42px
- 42px 42px 42px 42px 42px 42px;
+  -ms-grid-columns: 42px 42px 42px 42px 42px 42px  42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px;
+      grid-template-columns: 42px 42px 42px 42px 42px 42px  42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px;
   -ms-grid-rows: 42px 42px 42px 42px 42px 42px 42px;
       grid-template-rows: 42px 42px 42px 42px 42px 42px 42px;
   -webkit-box-pack: center;
@@ -308,12 +311,8 @@
 .Table2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 42px 42px 42px 42px 42px
- 42px 42px 42px 42px 42px
- 42px 42px 42px 42px 42px;
-      grid-template-columns: 42px 42px 42px 42px 42px
- 42px 42px 42px 42px 42px
- 42px 42px 42px 42px 42px;
+  -ms-grid-columns: 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px;
+      grid-template-columns: 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px;
   -ms-grid-rows: 42px, 42px;
       grid-template-rows: 42px, 42px;
   -webkit-box-pack: center;
@@ -486,6 +485,7 @@
 .periodicTableTextBox {
   display: -ms-grid;
   display: grid;
+  margin-left: 9.5%;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   -ms-grid-rows: 50px 210px 30px 25px;
@@ -494,7 +494,6 @@
   height: 420px;
   background-color: grey;
   border: 2px solid black;
-  margin-left: 13%;
   border-radius: 5px;
 }
 
@@ -522,7 +521,7 @@
     -ms-grid-rows: 52px 52px 52px;
         grid-template-rows: 52px 52px 52px;
     margin-top: 0%;
-    margin-left: 15%;
+    margin-left: 20%;
   }
   .grid2 {
     display: -ms-grid;
@@ -593,7 +592,7 @@
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1366px) {
   .grid {
     display: -ms-grid;
     display: grid;
@@ -602,7 +601,7 @@
     -ms-grid-rows: 52px 52px 52px;
         grid-template-rows: 52px 52px 52px;
     margin-top: 0%;
-    margin-left: 35%;
+    margin-left: 31.5%;
   }
   .grid2 {
     display: -ms-grid;
@@ -614,7 +613,7 @@
     width: 50px;
     height: 50px;
     text-align: center;
-    margin-left: 47%;
+    margin-left: 45%;
     margin-top: 5%;
   }
   .periodicTableTextBox {
