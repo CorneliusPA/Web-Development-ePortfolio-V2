@@ -404,8 +404,8 @@ c.setAttribute("src", "PeriodicTableImages/034 Se Selenium.gif");
 function element35(){
 document.getElementById("Name").innerHTML = "Bromine";
 document.getElementById("Description").innerHTML = "The name comes from the Greek 'bromos' meaning stench."
-+ " "
-+ " ";
++ " The image intends to reflect the rich colour, liquidity and aromatic nature of the element."
++ " Bromine is used in many areas such as agricultural chemicals, dyestuffs, insecticides, pharmaceuticals and chemical intermediates. Some uses are being phased out for environmental reasons, but new uses continue to be found.";
 c.setAttribute("src", "PeriodicTableImages/035 Br Bromine.gif");
    
 }
@@ -413,23 +413,23 @@ function element36(){
 document.getElementById("Name").innerHTML = "Krypton";
 document.getElementById("Description").innerHTML = "The name is derived from the Greek 'kryptos', meaning hidden."
 + " The image intends to reflect the rich colour, liquidity and aromatic nature of the element."
-+ " Bromine is used in many areas such as agricultural chemicals, dyestuffs, insecticides, pharmaceuticals and chemical intermediates. Some uses are being phased out for environmental reasons, but new uses continue to be found.";
++ " Krypton is used commercially as a filling gas for energy-saving fluorescent lights. It is also used in some flash lamps used for high-speed photography.";
 c.setAttribute("src", "PeriodicTableImages/036 Kr Krypton.gif");
    
 }
 function element37(){
 document.getElementById("Name").innerHTML = "Rubidium";
-document.getElementById("Description").innerHTML = "The name is derived from the Greek 'kryptos', meaning hidden."
-+ " There are many different isotopes of krypton. This symbol represents the isotope krypton-86."
-+ " Krypton is used commercially as a filling gas for energy-saving fluorescent lights. It is also used in some flash lamps used for high-speed photography";
+document.getElementById("Description").innerHTML = "The name is derived form the Latin 'rubidius', meaning deepest red."
++ " The image of an ‘electric eye’ is inspired by the use of rubidium in photocells (sensors that detect light)."
++ " Rubidium is little used outside research. It has been used as a component of photocells, to remove traces of oxygen from vacuum tubes and to make special types of glass.";
 c.setAttribute("src", "PeriodicTableImages/037 Rb Rubidium.gif");
    
 }
 function element38(){
 document.getElementById("Name").innerHTML = "Strontium";
-document.getElementById("Description").innerHTML = "The name is derived form the Latin 'rubidius', meaning deepest red."
-+ " The image of an ‘electric eye’ is inspired by the use of rubidium in photocells (sensors that detect light)."
-+ " Rubidium is little used outside research. It has been used as a component of photocells, to remove traces of oxygen from vacuum tubes and to make special types of glass.";
+document.getElementById("Description").innerHTML = "Strontium is named after Strontian, a small town in Scotland."
++ " The image is of a highly abstracted metallic ‘mushroom cloud’. It alludes to the presence of strontium in nuclear fallout."
++ " Strontium is best known for the brilliant reds its salts give to fireworks and flares. It is also used in producing ferrite magnets and refining zinc.";
 c.setAttribute("src", "PeriodicTableImages/038 Sr Strontium.gif");
    
 }

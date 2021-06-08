@@ -289,8 +289,12 @@
 .Table {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 42px 42px 42px 42px 42px 42px  42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px;
-      grid-template-columns: 42px 42px 42px 42px 42px 42px  42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px;
+  -ms-grid-columns: 42px 42px 42px 42px 42px 42px 
+ 42px 42px 42px 42px 42px 42px
+ 42px 42px 42px 42px 42px 42px;
+      grid-template-columns: 42px 42px 42px 42px 42px 42px 
+ 42px 42px 42px 42px 42px 42px
+ 42px 42px 42px 42px 42px 42px;
   -ms-grid-rows: 42px 42px 42px 42px 42px 42px 42px;
       grid-template-rows: 42px 42px 42px 42px 42px 42px 42px;
   -webkit-box-pack: center;
@@ -311,8 +315,12 @@
 .Table2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px;
-      grid-template-columns: 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px;
+  -ms-grid-columns: 42px 42px 42px 42px 42px
+ 42px 42px 42px 42px 42px
+ 42px 42px 42px 42px 42px;
+      grid-template-columns: 42px 42px 42px 42px 42px
+ 42px 42px 42px 42px 42px
+ 42px 42px 42px 42px 42px;
   -ms-grid-rows: 42px, 42px;
       grid-template-rows: 42px, 42px;
   -webkit-box-pack: center;
