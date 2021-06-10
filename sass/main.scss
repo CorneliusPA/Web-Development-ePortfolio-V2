@@ -51,18 +51,26 @@ background-color: $P3Bg;
     grid-template-rows: 55px 55px;
     justify-content: center;
 }
-.checkerGridChild{
+.checkerGrid div{
     border: 1px solid black; 
     width: 50px; 
     height: 50px; 
     display:inline-block;
 }
+
+
+/*.checkerGridChild{
+    border: 1px solid black; 
+    width: 50px; 
+    height: 50px; 
+    display:inline-block;
+} */
 .checkerPieceB{
-    background-color: rgb(19, 19, 19); 
+    background-color: rgb(59, 59, 59); 
     width: 50px; 
     height: 50px;
     border-radius: 50%; 
-    border: 1px solid grey;
+    border: 1px solid rgb(207, 207, 207);
 }
 .checkerPieceR{
     background-color: red; 
@@ -76,6 +84,13 @@ background-color: $P3Bg;
     grid-template-columns: 55px 55px 55px 55px 55px 55px 55px 55px;
     grid-template-rows: 55px 55px 55px 55px 55px 55px 55px 55px;
     justify-content: center;
+}
+
+.checkerBoard div{
+    border: 1px solid black; 
+    width: 50px; 
+    height: 50px; 
+    display:inline-block;
 }
 
 /* Periodic Table */
@@ -258,7 +273,10 @@ background-color: $P3Bg;
     justify-content: center;
     margin-top: 2%;
     }
-    .Element{
+    .Table div{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .Table button{
         text-align: center;
         width: 42px;
         height: 42px;
@@ -266,6 +284,15 @@ background-color: $P3Bg;
         border: 1px solid black;
         font-size: 10px;
     }
+    .Table2 button{
+        text-align: center;
+        width: 42px;
+        height: 42px;
+        padding: 10px;
+        border: 1px solid black;
+        font-size: 10px;
+    }
+    
     .Table2{
     
         display: grid;
@@ -276,17 +303,15 @@ background-color: $P3Bg;
         justify-content: center;
         margin-top: 1%;
     }
-    .Element2{
+    .Table2 button{
         background: linear-gradient(135deg, rgb(255, 200, 97), orange, rgb(161, 105, 0));
-        
     }
-    .Element2:hover{
+
+    .Table2 button:hover{
         background: linear-gradient(135deg, rgb(255, 213, 135), rgb(255, 186, 57), rgb(255, 166, 1));
         border: 1px solid white;
     }
-    .ElementV{
-    background-color: rgba(0, 0, 0, 0);
-    }
+    
     
     .ITM{
         background: linear-gradient(135deg,rgb(255, 200, 97), orange, rgb(161, 105, 0));
@@ -309,7 +334,17 @@ background-color: $P3Bg;
     justify-content: center;
     margin-top: -5%;
     }
-    .ECatalog{
+    
+    .Catalog button{
+text-align: center;
+        width: 10px;
+        height: 10px;
+        padding: 15px;
+        margin: 0px;
+        border:2px solid black;
+    }
+    
+    .Catalog div{
         color: black;
         font-size: 12px;
     width: 100px;
@@ -318,14 +353,6 @@ background-color: $P3Bg;
     padding: 10px;
     }
     
-    .elementSample{
-        text-align: center;
-        width: 10px;
-        height: 10px;
-        padding: 15px;
-        margin: 0px;
-        border:2px solid black;
-    }
     /* Hydrogen */
     
     .Hn{

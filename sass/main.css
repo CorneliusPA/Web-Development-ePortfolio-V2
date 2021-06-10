@@ -60,19 +60,25 @@
           justify-content: center;
 }
 
-.checkerGridChild {
+.checkerGrid div {
   border: 1px solid black;
   width: 50px;
   height: 50px;
   display: inline-block;
 }
 
+/*.checkerGridChild{
+    border: 1px solid black; 
+    width: 50px; 
+    height: 50px; 
+    display:inline-block;
+} */
 .checkerPieceB {
-  background-color: #131313;
+  background-color: #3b3b3b;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 1px solid grey;
+  border: 1px solid #cfcfcf;
 }
 
 .checkerPieceR {
@@ -94,6 +100,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.checkerBoard div {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
 }
 
 /* Periodic Table */
@@ -289,12 +302,8 @@
 .Table {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 42px 42px 42px 42px 42px 42px 
- 42px 42px 42px 42px 42px 42px
- 42px 42px 42px 42px 42px 42px;
-      grid-template-columns: 42px 42px 42px 42px 42px 42px 
- 42px 42px 42px 42px 42px 42px
- 42px 42px 42px 42px 42px 42px;
+  -ms-grid-columns: 42px 42px 42px 42px 42px 42px  42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px;
+      grid-template-columns: 42px 42px 42px 42px 42px 42px  42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px;
   -ms-grid-rows: 42px 42px 42px 42px 42px 42px 42px;
       grid-template-rows: 42px 42px 42px 42px 42px 42px 42px;
   -webkit-box-pack: center;
@@ -303,7 +312,20 @@
   margin-top: 2%;
 }
 
-.Element {
+.Table div {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.Table button {
+  text-align: center;
+  width: 42px;
+  height: 42px;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 10px;
+}
+
+.Table2 button {
   text-align: center;
   width: 42px;
   height: 42px;
@@ -315,12 +337,8 @@
 .Table2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 42px 42px 42px 42px 42px
- 42px 42px 42px 42px 42px
- 42px 42px 42px 42px 42px;
-      grid-template-columns: 42px 42px 42px 42px 42px
- 42px 42px 42px 42px 42px
- 42px 42px 42px 42px 42px;
+  -ms-grid-columns: 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px;
+      grid-template-columns: 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px 42px;
   -ms-grid-rows: 42px, 42px;
       grid-template-rows: 42px, 42px;
   -webkit-box-pack: center;
@@ -329,17 +347,13 @@
   margin-top: 1%;
 }
 
-.Element2 {
+.Table2 button {
   background: linear-gradient(135deg, #ffc861, orange, #a16900);
 }
 
-.Element2:hover {
+.Table2 button:hover {
   background: linear-gradient(135deg, #ffd587, #ffba39, #ffa601);
   border: 1px solid white;
-}
-
-.ElementV {
-  background-color: rgba(0, 0, 0, 0);
 }
 
 .ITM {
@@ -370,22 +384,22 @@
   margin-top: -5%;
 }
 
-.ECatalog {
-  color: black;
-  font-size: 12px;
-  width: 100px;
-  height: 20px;
-  margin: 0px;
-  padding: 10px;
-}
-
-.elementSample {
+.Catalog button {
   text-align: center;
   width: 10px;
   height: 10px;
   padding: 15px;
   margin: 0px;
   border: 2px solid black;
+}
+
+.Catalog div {
+  color: black;
+  font-size: 12px;
+  width: 100px;
+  height: 20px;
+  margin: 0px;
+  padding: 10px;
 }
 
 /* Hydrogen */
