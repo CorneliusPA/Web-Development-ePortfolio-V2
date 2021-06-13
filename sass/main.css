@@ -47,6 +47,14 @@
   background-color: #0000ac;
 }
 
+/*
+.summaryText{
+width:275px; justify-content: center; margin-left: 10px;
+}
+.summaryText h6{
+font-size: 15px;
+}
+*/
 /* Checker Board */
 .checkerGrid {
   display: -ms-grid;
@@ -534,6 +542,118 @@
   border-radius: 5px;
 }
 
+/*  Logo animation  */
+/*
+    .greenSquare{
+            background-color: rgba(2, 212, 2, .9); 
+          width:100px; 
+          height:100px;
+          left: 0;
+          animation: greenMove2 5s;
+          position: absolute;
+          animation: greenMove 5s; 
+          animation-delay: 0s;
+          z-index: 4;
+          }
+          
+          @keyframes greenMove{
+          0% {background-color: rgba(2, 212, 2, 0.7);transform: rotate(33deg) skewX(35deg) skewY(15deg);width: 80px; height: 80px; margin-left: 591px; margin-top: 287px;}
+          30%{background-color: rgba(2, 212, 2, 0.7);transform: rotate(33deg) skewX(35deg) skewY(15deg); width: 80px; height: 80px; margin-left: 591px; margin-top: 287px;}
+          45% {background-color: rgba(2, 212, 2, 0.7);margin-left:487px;margin-top:236px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px;}
+          50% {background-color: rgba(2, 212, 2, 0.7);margin-left:620px;margin-top:236px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px;}
+          75%{background-color: rgba(2, 212, 2, 0.7);margin-left:620px;margin-top:236px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          78%{background-color: rgba(2, 212, 2, 0.7);margin-left:630px;margin-top:246px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:80px; height:80px}
+          100%{background-color: rgba(2, 212, 2, 0.7);transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px;margin-left: 0px; margin-top: 37px;}
+          }
+          
+          .redSquare{
+          background-color: rgba(236, 0, 0, .9);
+              right: 0;
+              width:100px; 
+              height:100px;
+              position: absolute;
+          animation:redMove 5s;
+          animation-delay: 0s;
+          z-index: 4;
+          }
+          
+          @keyframes redMove{
+          0% {background-color: rgba(236, 0, 0, .7);width: 100px; height: 100px; margin-left: 619px; margin-top: 190px;transform: rotate(45deg);}
+          30%{background-color: rgba(236, 0, 0, .7);width: 100px; height: 100px; margin-left: 619px; margin-top: 190px;transform: rotate(45deg);}
+          45% {background-color: rgba(236, 0, 0, .7);margin-top:102px;transform: rotate(-45deg);}
+          50%{background-color: rgba(236, 0, 0, .7);margin-left: 620px;margin-top:236px;transform: rotate(-45deg);}
+          75%{background-color: rgba(236, 0, 0, .7);margin-left: 620px;margin-top:236px;transform: rotate(0deg);width: 100px;height: 100px;}
+          78%{background-color: rgba(236, 0, 0, .7);margin-left: 630px;margin-top:246px;transform: rotate(0deg);width: 80px;height: 80px;}
+          100%{background-color: rgba(236, 0, 0, .7);margin-left: 1250px; margin-top: 37px;transform: rotate(0deg);}
+          }
+          
+          
+          .blueSquare{
+          background-color: rgba(0, 0, 180, 0);
+          background-color: rgba(0, 0, 180, .9);
+            left: 0;
+            transform: rotate(0deg) skewX(0deg) skewY(0deg); 
+            width:100px; 
+            height:100px;  
+            position: absolute;
+          animation: blueMove 5s;
+          animation-delay: 0s;
+          z-index: 4;
+          }
+          
+          @keyframes blueMove{
+          0%{background-color: rgba(0, 0, 180, .7);width: 80px;height: 80px;margin-left: 667px;margin-top: 287px;transform: rotate(79deg) skewX(35deg) skewY(15deg);}
+          30%{background-color: rgba(0, 0, 180, .7);width: 80px;height: 80px;margin-left: 667px;margin-top: 287px;transform: rotate(79deg) skewX(35deg) skewY(15deg);}
+          45% {background-color: rgba(0, 0, 180, .7);margin-left: 753px;margin-top:236px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          50% {background-color: rgba(0, 0, 180, .7);margin-left: 620px;margin-top:236px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          75%{background-color: rgba(0, 0, 180, .7);margin-left: 620px;margin-top:236px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          78%{background-color: rgba(0, 0, 180, .7);margin-left: 630px;margin-top:246px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:80px; height:80px}
+          100%{background-color: rgba(0, 0, 180, .7);margin-left: 0px; margin-top: 535px; transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px; }
+          }
+          .yellowSquare{
+        background-color: rgba(255, 240, 25,.9);
+              right: 0;
+              width:100px; 
+              height:100px;
+          
+          position: absolute;
+          
+          animation:yellowMove 5s;
+          animation-delay: 0s;
+          z-index: 2;
+          }
+          
+          @keyframes yellowMove{
+          0% {background-color: rgba(255, 240, 25,.7);width:100px; height:100px;transform: rotate(45deg);margin-left: 620px;margin-top: 290px;}
+          30% {background-color: rgba(255, 240, 25,.7);width:100px; height:100px;transform: rotate(45deg);margin-left: 620px;margin-top: 290px;}
+          45%{background-color: rgba(255, 240, 25,.7);margin-top:367px;transform: rotate(-45deg);}
+          50%{background-color: rgba(255, 240, 25,.7);margin-left: 620px;margin-top:236px;transform: rotate(-45deg);}
+          75%{background-color: rgba(255, 240, 25,.7);margin-left: 620px;margin-top:236px;transform: rotate(0deg);width: 100px;height: 100px;}
+          78%{background-color: rgba(255, 240, 25,.7);margin-left: 630px;margin-top:246px;transform: rotate(0deg);width: 80px;height: 80px;}
+          100%{background-color: rgba(255, 240, 25,.7);margin-left:1250px; margin-top:535px; transform: rotate(0deg);}
+          }
+          
+          .logoCircle{
+              position: fixed;
+              width: 300px;
+              height: 300px;
+              margin-left: 520px;
+              margin-top: 135px;
+              background-color: rgba(255,255,255,0);
+              border-radius: 500px;
+              animation: circleBlip 3.9s;
+              animation-delay: 0s;
+              z-index: 1;
+          }
+          
+          @keyframes circleBlip{
+          0%{background-color:white;}
+          96%{width: 300px; height: 300px;margin-left: 520px;margin-top: 135px;}
+          97%{background-color:white; margin-left: 625px; margin-top: 233px;}
+          100%{background-color:rgba(255,255,255,0);height:0px; width:0px;margin-left: 625px; margin-top: 233px;}
+          }
+          */
+/*                                   Responsive                                            */
 @media screen and (min-width: 768px) {
   .grid {
     display: -ms-grid;
