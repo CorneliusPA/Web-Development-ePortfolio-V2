@@ -19,6 +19,7 @@ $PTableText: 14px;
 .ProjectIMG{
     
    width:375px;
+   margin-left: 10%;
 }
 
 .hProject{
@@ -493,6 +494,38 @@ text-align: center;
         margin-left: 5%; 
         border-radius: 5px;
         }
+    .boxBorder{
+        border: 2px solid #1ebfeb; 
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px; 
+        background-color: #0c1321; 
+        color: #00a1bd; 
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        font-size: 10px;
+    }
+    .boxBorder:hover{
+        color:white;
+        background-color: rgb(0, 189, 189);
+        font-size: 11px;
+        border: 2px solid white;
+    }
+    .resumeInfo{
+        border: 5px solid #1ebfeb; 
+        background-color: #0c1321; 
+        color: #00a1bd  
+    }
+    .skillContainer{
+        display: grid;
+        grid-template-columns: 110px 110px 110px;
+        grid-template-rows: 110px 110px 110px;
+        justify-content: center;
+
+    }
+    .nav-link{
+        color: blue;
+    }
     /*  Logo animation  */
     /*
     .greenSquare{

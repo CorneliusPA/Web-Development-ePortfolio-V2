@@ -12,6 +12,7 @@
 
 .ProjectIMG {
   width: 375px;
+  margin-left: 10%;
 }
 
 .hProject {
@@ -550,6 +551,47 @@ font-size: 15px;
   background-color: #0c1321;
   margin-left: 5%;
   border-radius: 5px;
+}
+
+.boxBorder {
+  border: 2px solid #1ebfeb;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #0c1321;
+  color: #00a1bd;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.boxBorder:hover {
+  color: white;
+  background-color: #00bdbd;
+  font-size: 11px;
+  border: 2px solid white;
+}
+
+.resumeInfo {
+  border: 5px solid #1ebfeb;
+  background-color: #0c1321;
+  color: #00a1bd;
+}
+
+.skillContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 110px 110px 110px;
+      grid-template-columns: 110px 110px 110px;
+  -ms-grid-rows: 110px 110px 110px;
+      grid-template-rows: 110px 110px 110px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-link {
+  color: blue;
 }
 
 /*  Logo animation  */
